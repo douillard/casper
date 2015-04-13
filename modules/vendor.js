@@ -4,13 +4,12 @@ var dataLayer  = require("../components/data-layer.js");
 var loadScript = require("../../components/load-script.js");
 
 
-casper.test.begin('/find-vendor', 8, function suite(test) {
+casper.test.begin('/find-vendor', 7, function suite(test) {
     casper.start(casper.options.baseUrl + "find-vendor", function() { 
         dataLayer.runTest(casper,test,"vendor-search");
         loadScript.runTest(casper, test);
         adService.runTest(casper, test, { channel: "vendor-search", parent: "local" });
     });
-    adUnit.runTest(casper, test, "#div-gpt-lazy-leaderboard-fixed-1");
     adUnit.runTest(casper, test, "#div-gpt-bottomBanner");
     adUnit.runTest(casper, test, "#div-gpt-shortRightBanner");
     adUnit.runTest(casper, test, "#div-gpt-skyscraper");
