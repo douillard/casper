@@ -11,7 +11,7 @@ exports.runTest = function runTest(casper, test) {
     casper.waitUntilVisible('.modal-body', function () {
         test.assertVisible('.modal-body form', 'login form should be visible');
         this.fill('.modal-body form', {
-            'email'   : 'cdouillard@me.com',
+            'email'   : 'xxxx@xxx.com',
             'password': 'password'
         });
         this.echo("INFO username entered");
