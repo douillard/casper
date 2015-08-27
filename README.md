@@ -7,6 +7,8 @@ casperjs test ./casper/modules/ --includes=casper/options.js --domain=[www.examp
 
 [Casper Quickstart Guide](http://docs.casperjs.org/en/latest/quickstart.html)
 
+[Casper GitHub](https://github.com/n1k0/casperjs)
+
 ## available options:
 ```
 --xunit=<filename> will export test suite results in a XUnit XML file
